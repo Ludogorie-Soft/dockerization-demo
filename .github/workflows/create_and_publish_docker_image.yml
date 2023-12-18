@@ -1,11 +1,6 @@
 name: Create and Publish Docker image
 on:
   workflow_call:
-    inputs:
-      docker_file_path:
-        description: path to Dockrfile
-        required: true
-        type: string
 
 jobs:
   build_and_publish_docker_image:
@@ -28,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ${{ inputs.docker_file_path }}
+          file: ./Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
