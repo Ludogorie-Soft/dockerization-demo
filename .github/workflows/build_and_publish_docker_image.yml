@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: Ludogorie-Soft/dockerization-demo/.github/workflows/build.yml
+        uses: Ludogorie-Soft/dockerization-demo/.github/workflows/build.yml@main
         with:
           jdk-version: '21'
 
