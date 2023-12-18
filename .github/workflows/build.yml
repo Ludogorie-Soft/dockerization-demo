@@ -32,4 +32,3 @@ jobs:
         run: |
           mkdir staging
           cp target/*.jar staging
-
