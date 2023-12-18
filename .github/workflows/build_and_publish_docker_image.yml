@@ -13,6 +13,5 @@ jobs:
     needs: build
     uses: Ludogorie-Soft/dockerization-demo/.github/workflows/create_and_publish_docker_image.yml@main
     secrets: inherit
-    with:
-      docker_file_path: /Dockerfile
+
 
