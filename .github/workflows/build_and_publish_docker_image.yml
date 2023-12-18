@@ -1,8 +1,6 @@
 name: Build, Test, and Publish Docker image
 on:
-  inputs:
-    - docker_file_path
-  workflow_dispatch:
+ workflow_dispatch:
   push:
     branches: [ main ]
 
