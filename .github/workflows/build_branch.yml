@@ -1,0 +1,20 @@
+name: Build and test branch
+
+on:
+  push:
+
+jobs:
+  build:
+    name: "Build and test"
+    uses: Ludogorie-Soft/ludogorie-soft-cicd/.github/workflows/maven/verify_and_build_maven.yml@main
+    secrets: inherit
+    with:
+      java-version: "17"
+      java-distribution: "oracle"
+      sonar-project-key: "Ludogorie-soft_dockerization-demo"
+      github-token: ${{ secrets.GITHUB_TOKEN }}
+      sonar-token: ${{ secrets.SONAR_TOKEN }}
+
+
+
+
