@@ -10,5 +10,6 @@ jobs:
     with:
       jdk_version: 21
   create_and_publish_docker_image:
+    needs: build
     uses: Ludogorie-Soft/dockerization-demo/.github/workflows/create_and_publish_docker_image.yml@main
     secrets: inherit
