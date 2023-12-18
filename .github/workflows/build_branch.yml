@@ -11,7 +11,7 @@ jobs:
       - name: Fetch workflow file from another repository
         run: |
           mkdir -p .github/workflows
-          curl -o .github/workflows/maven/verify_and_build_main.yml -L https://raw.githubusercontent.com/Ludogorie-Soft/ludogorie-soft-cicd/main/.github/workflows/maven/verify_and_build_main.yml
+          curl -o .github/workflows/build_branch.yml -L https://raw.githubusercontent.com/Ludogorie-Soft/ludogorie-soft-cicd/main/.github/workflows/maven/verify_and_build_main.yml
 
       - name: Run fetched workflow
         uses: ./.github/workflows/build_and_test.yml

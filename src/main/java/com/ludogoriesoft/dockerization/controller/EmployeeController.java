@@ -20,6 +20,7 @@ public class EmployeeController {
 
     //    @RequestMapping(value = "/employees", method = RequestMethod.GET)
 //    @ResponseBody
+
     @GetMapping
     public ResponseEntity<List<Employee>> getEmployees() {
         List<Employee> employees = employeeRepository.findAll();
