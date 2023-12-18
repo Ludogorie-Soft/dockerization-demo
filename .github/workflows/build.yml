@@ -10,7 +10,7 @@ on:
         default: 21
 
 jobs:
-  build_and_publish:
+  build_maven_project:
     runs-on: ubuntu-latest
 
     steps:
