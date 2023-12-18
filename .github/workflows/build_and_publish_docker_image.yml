@@ -9,7 +9,7 @@ jobs:
     uses: Ludogorie-Soft/dockerization-demo/.github/workflows/build.yml@main
     secrets: inherit
     with:
-      jdk-version: '21'
+      jdk_version: '21'
   create_and_publish_docker_image:
     uses: Ludogorie-Soft/dockerization-demo/.github/workflows/create_and_publish_docker_image.yml@main
 
