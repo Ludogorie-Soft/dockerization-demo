@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: "Build and test"
-    uses: Ludogorie-Soft/ludogorie-soft-cicd/.github/workflows/maven/verify_and_build_maven.yml@main
+    uses: Ludogorie-Soft/ludogorie-soft-cicd/.github/workflows/maven/verify_and_build_main.yml@main
     secrets: inherit
     with:
       java-version: "17"
