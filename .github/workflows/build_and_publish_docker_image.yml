@@ -1,5 +1,7 @@
 name: Build, Test, and Publish Docker image
 on:
+  inputs:
+    - docker_file_path
   workflow_dispatch:
   push:
     branches: [ main ]
@@ -12,4 +14,6 @@ jobs:
   create_and_publish_docker_image:
     needs: build
     uses: Ludogorie-Soft/dockerization-demo/.github/workflows/create_and_publish_docker_image.yml@main
+    with:
+      docker_file_path: Ludogorie-Soft/dockerization-demo/Dockerfile
     secrets: inherit
